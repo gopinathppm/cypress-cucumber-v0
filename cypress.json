@@ -1,0 +1,13 @@
+{
+ "baseUrl": "https://www.three.co.uk/Discover/Network/Coverage",
+ "testFiles": "**/*.feature",
+ "video": true,
+ "screenshotsFolder":"cypress/reports/screenshots",
+ "videosFolder": "cypress/reports/videos",
+ "hideXHR": true,
+ "env": {
+    "browserPermissions": {
+      "geolocation": "block"
+    }
+    }
+}
