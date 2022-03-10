@@ -1,1 +1,5 @@
 node_modules
+cypress/reports/cucumber-json/threeCoverage.cucumber.json
+cypress/reports
+cypress/reports/cucumber-html
+cypress/reports/cucumber-json

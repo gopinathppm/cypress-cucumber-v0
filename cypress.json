@@ -9,5 +9,6 @@
     "browserPermissions": {
       "geolocation": "block"
     }
-    }
+    },
+  "chromeWebSecurity": false
 }
