@@ -1,5 +1,5 @@
 {
- "baseUrl": "https://www.three.co.uk/Discover/Network/Coverage",
+ "baseUrl": "https://www.opencart.com/index.php?route=account/login",
  "testFiles": "**/*.feature",
  "video": true,
  "screenshotsFolder":"cypress/reports/screenshots",

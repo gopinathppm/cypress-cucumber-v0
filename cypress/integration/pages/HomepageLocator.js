@@ -1,7 +1,7 @@
 export default {
-  uname: '[id="email-address"]',
-  pwd: '[id="password"]',
-  login_btn: '[id="join-form-submit"]',
+  uname: '[id="input-email"]',
+  pwd: '[id="input-password"]',
+  login_btn: '[type="submit"]',
   searchbox: '[name="postcode"]',
   searchBtn: '[id="coverage-submit"]',
   map: '[aria-label="variable"]'

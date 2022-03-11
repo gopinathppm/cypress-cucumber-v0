@@ -14,6 +14,7 @@
 
 const cucumber = require('cypress-cucumber-preprocessor').default;
 const { cypressBrowserPermissionsPlugin } = require('cypress-browser-permissions');
+const readXlsx = require('./read-xlsx')
 
 /**
  * @type {Cypress.PluginConfig}
@@ -24,5 +25,14 @@ module.exports = (on, config) => {
   // `config` is the resolved Cypress config
   on('file:preprocessor', cucumber())
   config = cypressBrowserPermissionsPlugin(on, config);
+
+  on('task', {
+    'readXlsx': readXlsx.read,
+    log (message) {
+      console.log(message)
+      return null
+    }
+  })
+  
   return config;
 }

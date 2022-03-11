@@ -2,7 +2,6 @@
 import {
     Given, When, Then, And,
   } from 'cypress-cucumber-preprocessor/steps';
-// import { post } from 'cypress/types/jquery';
 import dataSelector from '../pages/HomepageLocator';
   
 Then(/^I see the logged in message$/, () => {
@@ -49,3 +48,13 @@ When(/^I click "([^"]*)"$/, (button) => {
   
 });
 
+Then(/^It reads the data from the Excel and login$/, () => {
+	cy.task('readXlsx', { file: 'cypress/fixtures/TestDataExcel.xlsx', sheet: "Sheet1" }).then((rows) => {
+    console.log("row",rows[0].UserID)
+    console.log("row",rows[0].Password)
+    cy.get(dataSelector.uname).click().type(rows[0].UserID);
+    cy.get(dataSelector.pwd).click().type(rows[0].Password);
+  })
+
+
+});

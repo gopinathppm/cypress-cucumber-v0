@@ -21,11 +21,12 @@
   "dependencies": {
     "@babel/core": "^7.17.0",
     "@babel/preset-env": "^7.16.11",
-    "babel-loader": "^8.2.3"
+    "babel-loader": "^8.2.3",
+    "xlsx": "^0.18.3"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": false,
-    "stepDefinitions": "./cypress/steps",
+    "stepDefinitions": "./cypress/integration/steps",
     "cucumberJson": {
       "generate": true,
       "outputFolder": "./cypress/reports/cucumber-json",
