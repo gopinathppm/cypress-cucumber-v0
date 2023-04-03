@@ -8,7 +8,7 @@
     "cy:open": "cypress open",
     "htmlreport": "node cucumber-html-report.js",
     "cy:headed": "npx cypress run --headed",
-    "cy:headless": "npx cypress run"
+    "ci:cy:run": "npx cypress run -b chrome"
   },
   "author": "gopinath muthusamy",
   "license": "ISC",
