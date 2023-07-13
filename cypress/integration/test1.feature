@@ -1,4 +1,4 @@
-Feature: Search function on ThreeApplication
+Feature: Search function on ThreeApplication - Machine 1
 
     Scenario Outline: Validate the search functionality
      
